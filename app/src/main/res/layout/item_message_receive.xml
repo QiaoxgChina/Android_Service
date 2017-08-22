@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/userInfo_ll"
+            android:background="@drawable/chat_receive"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:text="INTRODUCTION"/>
+
+
+        <LinearLayout
+            android:id="@+id/userInfo_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName_tv"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/header_iv"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/header_01"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

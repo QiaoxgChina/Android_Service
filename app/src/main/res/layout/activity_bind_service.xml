@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qiaoxg.servicedemo.activity.StartServiceActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_above="@+id/controlLayout_ll"/>
+
+    <LinearLayout
+        android:id="@+id/controlLayout_ll"
+        style="@style/MyLinearLayoutStyle"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BindService_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="bold"
+                android:gravity="center"
+                android:text="Bind Service"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/UnbindService_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="bold"
+                android:gravity="center"
+                android:text="Unbind Service"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/startSend_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="bold"
+                android:gravity="center"
+                android:text="Start Send Message"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/stopSend_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="bold"
+                android:gravity="center"
+                android:text="Stop Send Message"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/one_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="bold"
+                android:gravity="center"
+                android:text="Pre 1s"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/five_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="bold"
+                android:gravity="center"
+                android:text="Pre 5s"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
