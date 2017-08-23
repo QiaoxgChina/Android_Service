@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.qiaoxg.servicedemo">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -18,25 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.StartServiceActivity"
+        <activity
+            android:name=".activity.StartServiceActivity"
             android:label="StartService">
         </activity>
-        <activity android:name=".activity.BindServiceActivity"
+        <activity
+            android:name=".activity.BindServiceActivity"
             android:label="BindService">
         </activity>
 
         <service android:name=".service.BindTypeService"/>
         <service android:name=".service.StartTypeService"/>
+        <service android:name=".service.IntentTypeService"/>
 
-        <activity android:name=".activity.IntentServiceActivity"
+        <activity
+            android:name=".activity.IntentServiceActivity"
             android:label="IntentService">
         </activity>
-        <activity android:name=".activity.LifeCircleActivity"
+        <activity
+            android:name=".activity.LifeCircleActivity"
             android:label="LifeCircle">
         </activity>
-        <activity android:name=".activity.OverviewActivity"
+        <activity
+            android:name=".activity.OverviewActivity"
             android:label="Overview">
         </activity>
+
     </application>
 
 </manifest>
